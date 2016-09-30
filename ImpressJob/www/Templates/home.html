@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home de ImpressJob</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	<ion-pane>
+	<ion-header>
+		<p>Ion Home Page</p>
+	</ion-header>
+	<ion-content>
+	<div class="login" id="loginView">
+		<input type="email" name="Email" placeholder="Introduzca su correo">
+		<br>
+		<input type="password" name="Contraseña" placeholder="Introduzca su contraseña" ng-model="password" ng-minlength="3" ng-maxlength="15">
+		<br>
+		<button ng-model="button" ng-disabled="!Email || !Contraseña" ng-button="button button-block button-positive"></button>
+	</ion-content>
+	</div>
+	</ion-pane>
+
+</body>
+
+</html>

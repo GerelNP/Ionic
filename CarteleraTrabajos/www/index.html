@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="JobCards" ng-controller="JobCardsController">
+
+    <ion-pane>
+
+      <ion-header-bar class="bar-stable">
+          <div class="tabs-stripped tabs-top tabs-background-light ">
+                <div id="NavTab" class="tabs" class="col">
+                  <a class="tab-item active" href="">
+                    <i class="icon ion-search"></i>
+                  </a>
+                  <a class="tab-item" href="">
+                    <i class="icon ion-funnel"></i>
+                  </a>
+                  <a class="tab=item" href="">
+                    <i class="icon ion-android-person"></i>
+                  </a>
+                  
+                </div>
+            </div>
+      </ion-header-bar>
+
+      <ion-content class="padding">
+          <div >
+          
+             <div id="ImageJobs" >
+              <img src="/img/BG_Head.png">
+              
+            </div>
+             <div id="JobsCards" class= "list card" >
+                <div class= "item item-body">
+                  <img class="full-image" src="/img/Impressjob_Image_jobs@3x.png" >
+              </div>
+
+              
+            </div>
+          </div>
+
+
+
+      </ion-content>
+
+    </ion-pane>
+  </body>
+</html>

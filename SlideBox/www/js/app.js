@@ -43,7 +43,7 @@ angular.module('WelcomeView', ['ionic'])
 
 .controller("WelcomeViewController", function($scope,$state,$ionicSlideBoxDelegate){
   $scope.StartSearchPage=function(){
-    $state.go("main");
+    $state.go("PaginaSearch");
   }
 
   $scope.slideChanged=function(){

@@ -35,47 +35,70 @@
   <body ng-app="WelcomeView" >
 
     <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
-      </ion-header-bar>
-
+      
+<!--
       <ion-content ng-controller="WelcomeViewController">
       	<ion view view-title="Intro">
    			
    			  <ion-nav-buttons >
 		          <button class="button button-calm no-animation"
-		                  ng-click="StartSearchPage()" ng-show="!slideIndex">
+		                  ng-click="StartSearchPage()" >
 		           Inicia con ImpressJob
 		          </button>
 		          <button class="button button-calm no-animation"
-		                  ng-click="StartSearchPage()" ng-show="slideIndex > 0">
+		                  ng-click="StartSearchPage()" >
 		           Inicia con ImpressJob
 		          </button>
 		      </ion-nav-buttons>
+
+          on-slide-changed="slideChanged(index)"
 		        
+-->
 
-
-	         <ion-slide-box on-slide-changed="slideChanged(index)">
-		          <ion-slide>
-		            
-		            <div id="BackGround1">
-		             <img src="img/Group1.png">
+	         <ion-slide-box >
+		          <ion-slide id="BackGround1">
+		            <div class="row row-top"></div>
+                <div class="row row-center"></div>
+		            <div class="row row-bottom">
+                    <div class= "col ">
+                       <button id="ImpressJob" class="button button-calm no-animation"
+                          ng-click="StartSearchPage()" >
+                          Inicia con ImpressJob
+                       </button> 
+                    </div>
+                         
 		            </div>
 		           
 		          </ion-slide>
 
-		          <ion-slide>
-		            <div id="BackGround2">
-		              <img src="img/Group2.png">
-		            </div>
+		          <ion-slide id="BackGround2">
+		            <div class="row row-top"></div>
+                <div class="row row-center"></div>
+                <div class="row row-bottom">
+                    <div class= "col ">
+                       <button id="ImpressJob" class="button button-calm no-animation"
+                          ng-click="StartSearchPage()" >
+                          Inicia con ImpressJob
+                       </button> 
+                    </div>
+                         
+                </div>
 		     
 		          </ion-slide>
 
 
-		          <ion-slide>
-		            <div id="BackGround3">
-		              <img src="img/Group3.png">
-		            </div>
+		          <ion-slide id="BackGround3">
+		            <div class="row row-top"></div>
+                <div class="row row-center"></div>
+                <div class="row row-bottom">
+                    <div class= "col ">
+                       <button id="ImpressJob" class="button button-calm no-animation"
+                          ng-click="StartSearchPage()" >
+                          Inicia con ImpressJob
+                       </button> 
+                    </div>
+                         
+                </div> 
 		          </ion-slide>
 
 
@@ -83,7 +106,7 @@
 		     </ion-slide-box>
 
 
-    	</ion view>
+    	
 
       </ion-content>
     </ion-pane>

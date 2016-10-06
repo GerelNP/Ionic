@@ -2,20 +2,21 @@
 .slider{
 	height:100%;
 	text-align:center;
+	
 }
 .scroll{
 	height:100%;
 }
 #BackGround1{
-	background: url(Group1s.png);
+	background: url(Group1d.png);
 	background-size: cover;
 }
 #BackGround2{
-	background: url(Group2s.png);
+	background: url(Group2d.png);
 	background-size: cover;
 }
 #BackGround3{
-	background: url(Group3s.png);
+	background: url(Group3d.png);
 	background-size: cover;
 }
 
@@ -23,4 +24,5 @@
 	border-radius: 50px;
 	text-align: center;
 	font-size: 20px;
+	background-color: #6EC6C5;
 }

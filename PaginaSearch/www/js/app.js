@@ -29,7 +29,7 @@ angular.module('PaginaSearch', ['ionic'])
       Ubicacion : $scope.ubicacion;
     }
     $scope.StartJobsCards=function(){
-      $state.go("");
+      $state.go("JobsCards");
     }
 
   })

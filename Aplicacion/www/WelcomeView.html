@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/WelcomeView.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="lib/ionic/js/ionic-angular.js"></script>
+    <script src="lib/ionic/js/angular.js"></script>
+    <script src="lib/ionic/js/angular-ui/angular-ui-router.js"></script>
+
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/WelcomeView.js"></script>
+  </head>
+  <body ng-app="WelcomeView" >
+
+    <ion-pane>
+      
+
+
+	         <ion-slide-box >
+		          <ion-slide id="BackGround1">
+		            
+                    <div class="row">
+                      <div class= "col ">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                         <br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div>
+                  </div>
+
+
+                    <div class="row">
+                      <div class= "col col-80 col-offset-10">
+                         
+                         <button href="PaginaSearch.html" id="ImpressJob" class="button button-calm no-animation"
+                            ng-click="StartSearchPage()" >
+                             Inicia con <b> ImpressJob</b>
+                         </button> 
+
+                      </div>
+                    </div>
+                         
+		            
+		           
+		          </ion-slide>
+
+		          <ion-slide id="BackGround2">
+		            
+              <div class="row">
+                      <div class= "col ">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                         <br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div>
+                  </div>
+
+
+                    <div class="row">
+                      <div class= "col col-80 col-offset-10">
+                         
+                         <button href="PaginaSearch.html" id="ImpressJob" class="button button-calm no-animation"
+                            ng-click="StartSearchPage()" >
+                             Inicia con <b> ImpressJob</b>
+                         </button> 
+
+                      </div>
+                    </div>
+                         
+                         
+		     
+		          </ion-slide>
+
+
+		          <ion-slide id="BackGround3">
+		            
+              <div class="row">
+                      <div class= "col ">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                         <br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div>
+                  </div>
+
+
+                    <div class="row">
+                      <div class= "col col-80 col-offset-10">
+                         
+                         <button href="PaginaSearch.html"  id="ImpressJob" class="button button-calm no-animation"
+                            ng-click="StartSearchPage()" >
+                             Inicia con <b> ImpressJob</b>
+                         </button> 
+
+                      </div>
+                    </div>
+                         
+                         
+		          </ion-slide>
+
+
+
+		     </ion-slide-box>
+
+
+    	
+
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
